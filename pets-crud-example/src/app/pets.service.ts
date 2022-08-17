@@ -7,6 +7,7 @@ import { Pets } from './pets';
   providedIn: 'root'
 })
 export class PetsService {
+  [x: string]: any;
  
 
  private apiUrl='http://localhost:3000/pets';

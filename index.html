@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+  <title>Sign Up for Your Account</title>
+</head>
+  <body>
+
+    <script>
+      function validateForm() {
+        let x = document.forms["myForm"]["fname"].value;
+        if (x == "") {
+        alert("Name must be filled out");
+        return false;
+       }
+      }
+    </script>
+
+  
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+      Name: &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <input type="text" name="Username"> <br>
+      Enter Your Password: &emsp; <input type="text" name="Password"> <br>
+      Re-enter Your Password: <input type="text" name="ReEnterPassword"> <br>
+      <input type="submit" value="Submit">
+      </form>
+  
+
+  </body>
+
+</html>
